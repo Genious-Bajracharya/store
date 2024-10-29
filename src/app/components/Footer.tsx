@@ -1,4 +1,5 @@
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import Link from 'next/link';
 export default function Footer() {
     return (
       <footer id='footer' className="bg-gray-800 text-gray-200 py-10 mt-16 ">
@@ -12,10 +13,10 @@ export default function Footer() {
   
             
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-4 lg:mb-0">
-              <a href="/" className="hover:text-white">Home</a>
-              <a href="/" className="hover:text-white">Products</a>
-              <a href="/" className="hover:text-white">About</a>
-              <a href="/" className="hover:text-white">Contact</a>
+              <Link href="/" className="hover:text-white">Home</Link>
+              <Link href="/" className="hover:text-white">Products</Link>
+              <Link href="/" className="hover:text-white">About</Link>
+              <Link href="/" className="hover:text-white">Contact</Link>
             </div>
   
            
