@@ -8,7 +8,7 @@ export default function ProductDetail() {
 
   const params = useParams(); 
   const { productId } = params;
-  const [product, setProduct] = useState<Product[]>([]);
+  const [product, setProduct] = useState<Product | null>(null);
 
   useEffect(() => {
     if (productId) {
