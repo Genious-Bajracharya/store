@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useParams } from 'next/navigation';
 import Navbar from '@/app/components/Navbar';
 
+
 export default function ProductDetail() {
 
   const params = useParams(); 
@@ -23,11 +24,11 @@ export default function ProductDetail() {
   if (!product) return <p>Loading...</p>;
 
   const handleAddToCart = () => {
-
-  }
+    alert("Product added successfully")
+  } 
 
   return (
-    <div className='bg-slate-50'>
+    <div className='bg-slate-50 '>
       <div>
       <Navbar/>
       </div>
@@ -61,6 +62,7 @@ export default function ProductDetail() {
           </div>
         </div>
       </div>
+  
     </div>
     
   );

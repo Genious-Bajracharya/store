@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Navbar(){
 
@@ -15,7 +16,7 @@ export default function Navbar(){
                 </div>
             </div>
              <div className="lg:hidden">
-                Menu
+                <GiHamburgerMenu className=" text-black text-3xl cursor-pointer" />
              </div>
         </div>
     )
